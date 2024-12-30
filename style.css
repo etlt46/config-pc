@@ -1,57 +1,106 @@
-document.getElementById("config-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-    const budget = parseInt(document.getElementById("budget").value);
-    const useCase = document.getElementById("use-case").value;
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    const components = {
-        cpu: [
-            { name: "Intel Core i5-12400F", price: 180, img: "https://via.placeholder.com/150", performance: 8 },
-            { name: "AMD Ryzen 5 5600X", price: 200, img: "https://via.placeholder.com/150", performance: 9 }
-        ],
-        gpu: [
-            { name: "NVIDIA GTX 1660", price: 250, img: "https://via.placeholder.com/150", performance: 7 },
-            { name: "RTX 3060", price: 350, img: "https://via.placeholder.com/150", performance: 9 }
-        ]
-    };
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-    let total = 0;
-    const selectedComponents = [];
+header nav ul li {
+    margin: 0 15px;
+}
 
-    // Sélection des CPU
-    for (const cpu of components.cpu) {
-        if (cpu.price + total <= budget) {
-            selectedComponents.push(cpu);
-            total += cpu.price;
-            break;
-        }
-    }
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
 
-    // Sélection des GPU
-    for (const gpu of components.gpu) {
-        if (gpu.price + total <= budget) {
-            selectedComponents.push(gpu);
-            total += gpu.price;
-            break;
-        }
-    }
+main {
+    padding: 20px;
+}
 
-    // Affichage des résultats
-    const componentsList = document.getElementById("components-list");
-    componentsList.innerHTML = "";
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    if (selectedComponents.length > 0) {
-        selectedComponents.forEach((component) => {
-            const componentCard = document.createElement("div");
-            componentCard.className = "component-card";
-            componentCard.innerHTML = `
-                <img src="${component.img}" alt="${component.name}">
-                <h4>${component.name}</h4>
-                <p>Prix : ${component.price} €</p>
-            `;
-            componentsList.appendChild(componentCard);
-        });
-    } else {
-        componentsList.innerHTML = "<p>Budget insuffisant pour une configuration complète.</p>";
-    }
-});
+h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#components-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.component-card {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.component-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.component-card h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}

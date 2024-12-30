@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configurateur PC - Hardware Expert</title>
+    <title>Configurateur PC - Expert Hardware</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Configurateur PC - Hardware Expert</h1>
+        <h1>Configurateur PC - Expert Hardware</h1>
         <nav>
             <ul>
-                <li><a href="#configurator">Configurateur</a></li>
+                <li><a href="#configurator">Configurateur Automatique</a></li>
+                <li><a href="#manual-config">Configurateur Manuel</a></li>
                 <li><a href="#bottleneck">Calculateur de Bottleneck</a></li>
-                <li><a href="#premium">Premium</a></li>
+                <li><a href="#about">À propos</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
+        <!-- Section Configurateur Automatique -->
         <section id="configurator">
-            <h2>Créez votre configuration PC</h2>
-            <form id="config-form">
+            <h2>Configurateur Automatique</h2>
+            <form id="auto-config-form">
                 <label for="budget">Budget (€) :</label>
                 <input type="number" id="budget" placeholder="Ex: 1000" required>
 
@@ -32,18 +34,49 @@
                     <option value="bureautique">Bureautique</option>
                 </select>
 
-                <button type="submit">Générer la config</button>
+                <button type="submit">Générer une configuration</button>
             </form>
-            
-            <div id="results">
-                <h3>Votre configuration :</h3>
+            <div id="auto-config-results">
+                <h3>Résultats :</h3>
                 <div id="components-list"></div>
             </div>
+        </section>
+
+        <!-- Section Configurateur Manuel -->
+        <section id="manual-config">
+            <h2>Configurateur Manuel</h2>
+            <p>Choisissez chaque composant de votre configuration.</p>
+            <form id="manual-config-form">
+                <label for="cpu-manual">Processeur :</label>
+                <select id="cpu-manual"></select>
+
+                <label for="gpu-manual">Carte Graphique :</label>
+                <select id="gpu-manual"></select>
+
+                <label for="ram-manual">Mémoire RAM :</label>
+                <select id="ram-manual"></select>
+
+                <button type="submit">Vérifier la configuration</button>
+            </form>
+        </section>
+
+        <!-- Section Calculateur de Bottleneck -->
+        <section id="bottleneck">
+            <h2>Calculateur de Bottleneck</h2>
+            <div id="bottleneck-results">
+                <p>Entrez une configuration ci-dessus pour calculer le bottleneck.</p>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about">
+            <h2>À propos de ce site</h2>
+            <p>Ce configurateur est conçu pour vous aider à créer une configuration PC adaptée à vos besoins, en tenant compte de votre budget et des compatibilités matérielles.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Hardware Expert</p>
+        <p>© 2024 Expert Hardware</p>
     </footer>
 
     <script src="script.js"></script>

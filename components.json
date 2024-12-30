@@ -1,0 +1,188 @@
+{
+  "cpu": [
+    {
+      "id": 1,
+      "name": "Intel Core i9-13900K",
+      "price": 659,
+      "performance": 95,
+      "socket": "LGA1700",
+      "description": "Processeur haut de gamme pour gamers et créateurs de contenu.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "AMD Ryzen 9 7900X",
+      "price": 549,
+      "performance": 92,
+      "socket": "AM5",
+      "description": "Puissant et efficace pour des charges de travail intensives.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 4]
+    },
+    {
+      "id": 3,
+      "name": "Intel Core i7-13700KF",
+      "price": 429,
+      "performance": 88,
+      "socket": "LGA1700",
+      "description": "Un excellent rapport performance/prix pour les gamers.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 2]
+    },
+    {
+      "id": 4,
+      "name": "AMD Ryzen 7 5800X3D",
+      "price": 379,
+      "performance": 85,
+      "socket": "AM4",
+      "description": "Optimisé pour les performances en gaming.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    }
+  ],
+  "gpu": [
+    {
+      "id": 1,
+      "name": "NVIDIA GeForce RTX 4090",
+      "price": 1949,
+      "performance": 100,
+      "description": "Carte graphique ultime pour le gaming et la création.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "AMD Radeon RX 7900 XTX",
+      "price": 999,
+      "performance": 90,
+      "description": "Excellente alternative pour le 4K gaming.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    },
+    {
+      "id": 3,
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "price": 799,
+      "performance": 85,
+      "description": "Un choix équilibré pour le gaming en 1440p.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 2]
+    }
+  ],
+  "motherboard": [
+    {
+      "id": 1,
+      "name": "ASUS ROG STRIX Z790-E",
+      "price": 499,
+      "socket": "LGA1700",
+      "description": "Carte mère haut de gamme pour les processeurs Intel.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "MSI MPG B650 Carbon WiFi",
+      "price": 299,
+      "socket": "AM5",
+      "description": "Idéal pour les processeurs AMD Ryzen 7000.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    },
+    {
+      "id": 3,
+      "name": "Gigabyte B550 AORUS Elite V2",
+      "price": 159,
+      "socket": "AM4",
+      "description": "Carte mère abordable pour les Ryzen 5000.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 1]
+    }
+  ],
+  "ram": [
+    {
+      "id": 1,
+      "name": "Corsair Vengeance LPX 16GB DDR4 3200MHz",
+      "price": 79,
+      "capacity": 16,
+      "type": "DDR4",
+      "description": "Idéal pour les configurations gaming.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "G.Skill Trident Z5 RGB 32GB DDR5 6000MHz",
+      "price": 299,
+      "capacity": 32,
+      "type": "DDR5",
+      "description": "Performances extrêmes pour les plateformes Intel et AMD modernes.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    }
+  ],
+  "storage": [
+    {
+      "id": 1,
+      "name": "Samsung 970 EVO Plus 1TB NVMe SSD",
+      "price": 99,
+      "type": "NVMe",
+      "capacity": "1TB",
+      "description": "Rapide et fiable, parfait pour le gaming et le travail.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Seagate BarraCuda 2TB HDD",
+      "price": 59,
+      "type": "HDD",
+      "capacity": "2TB",
+      "description": "Idéal pour le stockage de données massives.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    }
+  ],
+  "psu": [
+    {
+      "id": 1,
+      "name": "Corsair RM750x 80+ Gold 750W",
+      "price": 129,
+      "wattage": 750,
+      "efficiency": "80+ Gold",
+      "description": "Fiable pour les configurations haut de gamme.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Be Quiet! Pure Power 11 500W",
+      "price": 79,
+      "wattage": 500,
+      "efficiency": "80+ Gold",
+      "description": "Abordable et silencieuse, parfaite pour les configs légères.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    }
+  ],
+  "case": [
+    {
+      "id": 1,
+      "name": "NZXT H510 Elite",
+      "price": 149,
+      "formFactor": "ATX",
+      "description": "Boîtier esthétique avec un excellent flux d'air.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Corsair 4000D Airflow",
+      "price": 89,
+      "formFactor": "ATX",
+      "description": "Abordable et performant pour le refroidissement.",
+      "img": "https://via.placeholder.com/150",
+      "alternatives": [1, 3]
+    }
+  ]
+}
